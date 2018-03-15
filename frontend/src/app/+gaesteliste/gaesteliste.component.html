@@ -1,0 +1,60 @@
+<div class="mgn">
+  <h1>Gästeliste</h1>
+  <h3>Eingeladene Gäste</h3>
+  <table class="table">
+    <tr>
+      <th></th>
+      <th>Nachname</th>
+      <th>Vorname</th>
+      <th>Alter</th>
+      <th>Geschlecht</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let guest of guests">
+      <td>
+        <input type="checkbox" [(ngModel)]="guest.attending">
+      </td>
+      <td>{{guest.surname}}</td>
+      <td>{{guest.name}}</td>
+      <td>{{guest.age}}</td>
+      <td>{{guest.gender}}</td>
+      <td>
+        <button class="btn btn-xs btn-danger" (click)="deleteGuest(guest.id)">
+          Löschen
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input class="form-control" [(ngModel)]="addSurname" placeholder="Surname">
+      </td>
+      <td>
+        <input class="form-control" [(ngModel)]="addName" placeholder="Name">
+      </td>
+      <td>
+        <input type="number" class="form-control" [(ngModel)]="addAge" placeholder="Age">
+      </td>
+      <td>
+        <select [(ngModel)]="addGender" name="gender" class="form-control">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+      </td>
+      <td>
+        <button class="btn btn-primary btn-sm" (click)="addGuest()">Add</button>
+      </td>
+    </tr>
+  </table>
+  <h3>Zugesagt</h3>
+  <table class="table">
+    <tr>
+      <th>Nachname</th>
+      <th>Vorname</th>
+    </tr>
+    <tr *ngFor="let guest of guests">
+      <td *ngIf="guest.attending">{{guest.surname}}</td>
+      <td *ngIf="guest.attending">{{guest.name}}</td>
+    </tr>
+  </table>
+</div>

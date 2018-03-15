@@ -1,0 +1,54 @@
+<div class="mgn">
+    <h1>Taschenrechner</h1>
+    <form name="calculator">
+        <div class="input-group">
+            <span class="input-group-addon">Number</span>
+            <input type="number" class="form-control" placeholder="First Number" [(ngModel)]="n1" name="number1" />
+        </div>
+        <br />
+        <select [(ngModel)]="op" name="operator" class="form-control">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="^">^</option>
+            <option value="sqrt">sqrt</option>
+        </select>
+        <br />
+        <div class="input-group">
+            <span class="input-group-addon">Number</span>
+            <input type="number" class="form-control" placeholder="Second Number" [(ngModel)]="n2" name="number2" />
+        </div>
+        <br />
+        <div class="btn-group" role="group">
+            <button class="btn btn-primary" type="button" (click)="calculateResult()" name="calculateResult">
+                Calculate
+            </button>
+            <button class="btn btn-default" (click)="back()" name="zurücksetzen">
+                Zurücksetzen
+            </button>
+        </div>
+        <br />
+        <br />
+        <div class="well">
+            <table class="table">
+                <tr>
+                    <td class="col-md-3">First Number</td>
+                    <td class="col-md-9">{{n1}}</td>
+                </tr>
+                <tr>
+                    <td class="col-md-3">Operator</td>
+                    <td class="col-md-9">{{op}}</td>
+                </tr>
+                <tr>
+                    <td class="col-md-3">Second Number</td>
+                    <td class="col-md-9">{{n2}}</td>
+                </tr>
+                <tr>
+                    <td class="col-md-3">Result</td>
+                    <td class="col-md-9">{{result}}</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>

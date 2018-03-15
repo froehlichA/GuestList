@@ -1,0 +1,74 @@
+{
+  "guestList": [
+    {
+      "surname": "Wayne",
+      "name": "John",
+      "age": 25,
+      "gender": "male",
+      "attending": false
+    },
+    {
+      "surname": "Eisenhauer",
+      "name": "Dwight",
+      "age": 30,
+      "gender": "female",
+      "attending": false
+    },
+    {
+      "surname": "Bucannan",
+      "name": "Johanna",
+      "age": 28,
+      "gender": "female",
+      "attending": false
+    },
+    {
+      "surname": "Mars",
+      "name": "Joy",
+      "age": 15,
+      "gender": "female",
+      "attending": false
+    },
+    {
+      "surname": "Queen",
+      "name": "Mary",
+      "age": 28,
+      "gender": "female",
+      "attending": false
+    },
+    {
+      "surname": "Krause",
+      "name": "Peter",
+      "age": 95,
+      "gender": "male",
+      "attending": false
+    },
+    {
+      "surname": "Bach",
+      "name": "Sebastian",
+      "age": 50,
+      "gender": "male",
+      "attending": false
+    },
+    {
+      "surname": "Planet",
+      "name": "Erika",
+      "age": 27,
+      "gender": "female",
+      "attending": false
+    },
+    {
+      "surname": "Smith",
+      "name": "Patrick",
+      "age": 40,
+      "gender": "male",
+      "attending": false
+    },
+    {
+      "surname": "Eisenhauer",
+      "name": "Samantha",
+      "age": 60,
+      "gender": "female",
+      "attending": false
+    }
+  ]
+}
